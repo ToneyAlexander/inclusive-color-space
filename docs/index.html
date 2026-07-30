@@ -5,6 +5,18 @@
     <meta charset="utf-8">
     <title>What Colors Are We? Constructing A Good Enough Color Space For Skin Tones</title>
 
+    <meta property="og:title" content="What Colors Are We? Constructing A Good Enough Color Space For Skin Tones">
+    <meta property="og:description" content="Simple equations to inclusively select skin tones">
+    <meta property="og:image" content="img/preview.png">
+    <meta property="og:image:alt" content="Preview of an inclusive skin tone selector">
+    <meta property="og:image:width" content="1349">
+    <meta property="og:image:height" content="762">
+    <meta property="og:url" content="https://toneyalexander.github.io/inclusive-color-space/">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+
+    <link id="favicon" rel="icon" type="image/x-icon" href="img/favicon.png">
+
     <link rel="stylesheet" href="writeup.css">
     <link rel="stylesheet" href="picker.css">
 </head>
@@ -279,7 +291,7 @@ def to_rgb(t, u, v) -> tuple[int, int, int]:
 
             <p>
                 The result of all of that was that I decided I needed some way to transform the shape into something
-                easier to work with; that's when I learned about principal component analysis and was immediately
+                easier to work with: that's when I learned about principal component analysis and was immediately
                 inspired.
             </p>
 
@@ -302,7 +314,7 @@ def to_rgb(t, u, v) -> tuple[int, int, int]:
                     <p>
                         Below are some great videos, essays and projects that address these issues through a
                         variety of lenses. I highly recommend taking a look, especially if you want a break before we
-                        get into more math.
+                        get into the math.
                     </p>
 
                     <p>
@@ -376,7 +388,7 @@ def to_rgb(t, u, v) -> tuple[int, int, int]:
             <p>
                 Briefly, principal component analysis (PCA) is a way to rotate and stretch a dataset so that the main
                 directions of variation lie along the axes of the coordinate system. To make that more concrete - recall
-                the banana shape of my dataset from before. In it's original form, the banana was sort of floating in
+                the banana shape of my dataset from before. In its original form, the banana was sort of floating in
                 space. PCA took that shape and placed in on the ground so that it was symmetrical about the axes and
                 aligned nicely. It also did some slight stretching and rescaling, but that's less important.
             </p>
@@ -470,10 +482,13 @@ def to_rgb(t, u, v) -> tuple[int, int, int]:
 
             <p>
                 And all that being said, I think I would endorse the overall method I used, if not the specifics. That
-                being "Label Data" -> "PCA" -> "Fit A Spherical Equation".
+                being "Label Data" → "PCA" → "Fit A Spherical Equation".
             </p>
 
-            <hr />
+            <h2 id="results">
+                <a class="anchor" href="#results" aria-label="Link to this section">#</a>
+                Results
+            </h2>
 
             <p>
                 From the equations, the sample code at the top of the page is just a short translation away. The next
@@ -483,10 +498,10 @@ def to_rgb(t, u, v) -> tuple[int, int, int]:
                 actually looks like, and what properties it has.
             </p>
 
-            <h2 id="picker-ui">
+            <h3 id="picker-ui">
                 <a class="anchor" href="#picker-ui" aria-label="Link to this section">#</a>
                 Picker UI
-            </h2>
+            </h3>
 
             <figure>
                 <img src="img/picker-explain.png" style="width:100%"
@@ -571,10 +586,10 @@ def to_rgb(t, u, v) -> tuple[int, int, int]:
                 look a lot like Saturation, overall it doesn't quite correlate.
             </p>
 
-            <h3 id="r2">
+            <h4 id="r2">
                 <a class="anchor" href="#r2" aria-label="Link to this section">#</a>
                 Adjusting R²
-            </h3>
+            </h4>
 
             <p>
                 What is R²? R² is the radius of a sphere in the skin tone color space. Because one of the steps of
@@ -667,17 +682,17 @@ def to_rgb(t, u, v) -> tuple[int, int, int]:
                 having a single parameter to tweak makes it easy to adjust the equations to your needs.
             </p>
 
-            <h2 id="results">
-                <a class="anchor" href="#results" aria-label="Link to this section">#</a>
-                Results
-            </h2>
+            <h3 id="summary">
+                <a class="anchor" href="#summary" aria-label="Link to this section">#</a>
+                In Summary
+            </h3>
 
             <p>
-                In summary: we have a color space, we have a picker for it, we have a procedural generation
+                We have a color space, we have a picker for it, we have a procedural generation
                 algorithm, and we have a methodology for creating new spaces or modifying the existing one. Overall, I'm
                 thrilled with this result. It's certainly not perfect, but I don't think a simple and completely correct
                 solution exists. I've already used the picker in a digital painting and it was exactly as I was hoping
-                it'd be.
+                it'd be - and I'm looking forward to using the generator in my next project.
             </p>
 
             <h2 id="next">
@@ -736,12 +751,11 @@ def to_rgb(t, u, v) -> tuple[int, int, int]:
             </h4>
             <p>
                 From a technical direction, making the equation generation more formalized is another potential
-                direction to go.
-                Starting with the shape of equations I manually determined, symbolic regression on those against better
-                training data might lead to an even better color space definition.
+                direction to go. Starting with the shape of equations I manually determined, symbolic regression on
+                those against better training data might lead to an even better color space definition.
             </p>
             <p>
-                Aside from those larger projects, there's also the potential for optimizing the equations for different
+                There's also the potential for optimizing the equations for different
                 contexts. I've chosen to write them out in code as they are to be the most readable to a broad audience.
                 However, keen mathematicians might notice that one of those steps looks a lot like a matrix
                 multiplication, which can be rewritten to be more efficient in certain contexts.

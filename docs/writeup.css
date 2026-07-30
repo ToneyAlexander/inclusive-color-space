@@ -97,6 +97,7 @@ td {
 }
 
 h2:hover .anchor,
-h3:hover .anchor {
+h3:hover .anchor,
+h4:hover .anchor {
     opacity: 1;
 }

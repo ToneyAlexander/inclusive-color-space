@@ -97,7 +97,7 @@ function drawGrid() {
     tableFaces()
 
     const width = window.innerWidth;
-    const height = window.innerHeight;
+    const height = window.innerHeight + 200;
 
     const dpr = window.devicePixelRatio || 1;
 
