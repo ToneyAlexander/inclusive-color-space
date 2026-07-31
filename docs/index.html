@@ -6,8 +6,10 @@
     <title>What Colors Are We? Constructing A Color Space For Skin Tones</title>
 
     <meta property="og:title" content="What Colors Are We? Constructing A Color Space For Skin Tones">
-    <meta name=”description” content="Simple equations and a color picker to inclusively select simplified skin tones in a custom color space for digital art or game development.">
-    <meta property="og:description" content="Simple equations and a color picker to inclusively select simplified skin tones in a custom color space for digital art or game development.">
+    <meta name=”description”
+        content="Simple equations and a color picker to inclusively select simplified skin tones in a custom color space for digital art or game development.">
+    <meta property="og:description"
+        content="Simple equations and a color picker to inclusively select simplified skin tones in a custom color space for digital art or game development.">
     <meta property="og:image" content="https://toneyalexander.github.io/inclusive-color-space/img/preview.png">
     <meta property="og:image:alt" content="Preview of an inclusive skin tone selector">
     <meta property="og:image:width" content="1200">
@@ -704,7 +706,7 @@ def to_rgb(t, u, v) -> tuple[int, int, int]:
 
             <p>
                 First is feedback: if you at all found this interesting or useful, please let me know! Although I
-                did this work for my own use, hearing from others is also so rewarding. Please reach out with any
+                did this work for my own use, hearing from others is also so rewarding. Also please reach out with any
                 questions or feedback - especially if you spot something I didn't think about.
             </p>
 
@@ -731,9 +733,11 @@ def to_rgb(t, u, v) -> tuple[int, int, int]:
             </h4>
 
             <p>
-                The only validation I did for the training data and resulting space is just "does this look right to my
-                eyes". A simple iteration on this would be to have multiple people labeling data and measuring the
-                output more precisely against that.
+                In defining the color space so precisely and using specific R² values, there is a risk that some colors
+                have been excluded or marginalized. However, that same concreteness also allows for extremely precise
+                critiques of the color space, and therefore extremely precise improvements. As mentioned before, my
+                process involved a lot of subjective eyeballing - a great iteration on that would be to have multiple
+                people, perhaps experts, labeling data and then measuring the output more precisely against that.
             </p>
 
             <h4 id="conditions">
