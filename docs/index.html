@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What Colors Are We? Constructing A Color Space For Skin Tones</title>
 
     <meta property="og:title" content="What Colors Are We? Constructing A Color Space For Skin Tones">
@@ -163,7 +162,7 @@ def to_rgb(t, u, v) -> tuple[int, int, int]:
             </p>
 
             <figure>
-                <img src="img/cloud.png" class="i100"
+                <img src="img/cloud.png" style="width:100%"
                     alt="a lumpy rectangle shape with a spectrum of skin colors smeared together"
                     title="a lumpy rectangle shape with a spectrum of skin colors smeared together">
                 <figcaption>
@@ -180,7 +179,7 @@ def to_rgb(t, u, v) -> tuple[int, int, int]:
             </p>
 
             <figure style="text-align: center">
-                <img src="img/paralives.png" class="i30"
+                <img src="img/paralives.png" style="width:30%"
                     alt="a skin color picker with 18 choices and an extra spot for bringing up a generic color picker"
                     title="a skin color picker with 18 choices and an extra spot for bringing up a generic color picker">
                 <figcaption>Screenshot from character creator for the early access game Paralives</figcaption>
@@ -262,7 +261,7 @@ def to_rgb(t, u, v) -> tuple[int, int, int]:
             </h3>
 
             <figure>
-                <img src="img/annotater.png" class="i100"
+                <img src="img/annotater.png" style="width:100%"
                     alt="a webpage with sets of different colored faces on the left and right - the faces on the left have colors more like skin tones, and the ones on the right are purples, blues, and greens"
                     title="a webpage with sets of different colored faces on the left and right - the faces on the left have colors more like skin tones, and the ones on the right are purples, blues, and greens">
                 <figcaption>Data labeling UI</figcaption>
@@ -282,7 +281,7 @@ def to_rgb(t, u, v) -> tuple[int, int, int]:
             </p>
 
             <figure>
-                <img src="img/initial_curve.png" class="i70"
+                <img src="img/initial_curve.png" style="width:70%"
                     alt="a 3D graph of points - the colors range from darker on the bottom left to lighter on the top right"
                     title="a 3D graph of points - the colors range from darker on the bottom left to lighter on the top right">
                 <figcaption>Matplotlib graph of the labeled data</figcaption>
@@ -400,7 +399,7 @@ def to_rgb(t, u, v) -> tuple[int, int, int]:
 
             <figure>
                 <figcaption>The graph from before and after applying the PCA transformation</figcaption>
-                <img src="img/initial_to_pca.png" class="i100"
+                <img src="img/initial_to_pca.png" style="width:100%"
                     alt="two 3D graphs with an arrow labeled PCA pointing left to right - on the left is a curve from the origin to the top right, and on the right is a similar curve but aligned with the axes"
                     title="two 3D graphs with an arrow labeled PCA pointing left to right - on the left is a curve from the origin to the top right, and on the right is a similar curve but aligned with the axes">
             </figure>
@@ -423,7 +422,7 @@ def to_rgb(t, u, v) -> tuple[int, int, int]:
 
             <figure>
                 <figcaption>The dataset in XYZ space, graphed in Desmos</figcaption>
-                <img src="img/desmos_1.png" class="i70" alt="3D graph of a cloud of points"
+                <img src="img/desmos_1.png" style="width:70%" alt="3D graph of a cloud of points"
                     title="3D graph of a cloud of points">
             </figure>
 
@@ -448,7 +447,7 @@ def to_rgb(t, u, v) -> tuple[int, int, int]:
 
             <figure>
                 <figcaption>What the graph looks like when t = x, u = y and v = z</figcaption>
-                <img src="img/desmos_2.png" class="i70"
+                <img src="img/desmos_2.png" style="width:70%"
                     alt="3D graph of a cloud of points with a sphere overlapping with the middle"
                     title="3D graph of a cloud of points with a sphere overlapping with the middle">
             </figure>
@@ -466,7 +465,7 @@ def to_rgb(t, u, v) -> tuple[int, int, int]:
 
             <figure>
                 <figcaption>What my Desmos “workspace” ended up looking like.</figcaption>
-                <img src="img/desmos_workspace.png" class="i80"
+                <img src="img/desmos_workspace.png" style="width:80%"
                     alt="graphing calculator display - on the left are a set of equations, and on the right is a 3D shape that lines up with the cloud of points"
                     title="graphing calculator display - on the left are a set of equations, and on the right is a 3D shape that lines up with the cloud of points">
             </figure>
@@ -510,7 +509,7 @@ def to_rgb(t, u, v) -> tuple[int, int, int]:
             </h3>
 
             <figure>
-                <img src="img/picker-explain.png" class="i100"
+                <img src="img/picker-explain.png" style="width:100%"
                     alt="the color picker interface from the top of the page with parts that control T, U and V labeled"
                     title="the color picker interface from the top of the page with parts that control T, U and V labeled">
                 <figcaption>Sorry - this one's not interactive</figcaption>

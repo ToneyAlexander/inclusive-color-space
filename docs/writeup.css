@@ -47,52 +47,10 @@ img {
     margin: auto;
 }
 
-img.i30 {
-    width: 30%;
-}
-
-img.i70 {
-    width: 70%;
-}
-
-img.i80 {
-    width: 70%;
-}
-
-img.i100 {
-    width: 100%;
-}
-
 h1 {
     text-align: center;
     margin-bottom: 2.5rem;
 }
-
-@media screen and (max-width: 480px) {
-    #main-container {
-        margin: 8rem 0rem;
-    }
-
-    main {
-        padding: 2rem;
-        max-width: none;
-    }
-
-    h1 {
-        margin: auto;
-    }
-
-    body {
-        margin: auto;
-    }
-
-    img.i30,
-    img.i70,
-    img.i80 {
-        width: 100%;
-    }
-}
-
 
 hr {
     border: 2px ridge #3E442B;
