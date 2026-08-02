@@ -68,6 +68,11 @@ h1 {
     margin-bottom: 2.5rem;
 }
 
+.infobox {
+    margin: 16px;
+    background-color: #dae3bd;
+}
+
 @media screen and (max-width: 768px) {
     #main-container {
         margin: 8rem 0rem;
@@ -90,6 +95,12 @@ h1 {
     img.i70,
     img.i80 {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .infobox {
+        margin: 0px;
     }
 }
 
