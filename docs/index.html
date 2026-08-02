@@ -766,6 +766,15 @@ def to_rgb(t, u, v) -> tuple[int, int, int]:
                 However, keen mathematicians might notice that one of those steps looks a lot like a matrix
                 multiplication, which can be rewritten to be more efficient in certain contexts.
             </p>
+            <p>
+                It might also be interesting to see what the results look like if you transform the data into another
+                color space before doing the principal component analysis and equation fitting. There's a chance the
+                equations end up being simpler or more representative. Because of the sphere, the shape of the surface
+                in the color space you build from will be maintained and it will mainly scale with R² values. For an
+                illustration of this idea, see the <a
+                    href="https://github.com/ToneyAlexander/inclusive-color-space/blob/main/inclusive-color-space/graph.py">graph
+                    script</a> in the repo's code.
+            </p>
 
             <h2 id="thanks">
                 <a class="anchor" href="#thanks" aria-label="Link to this section">#</a>
