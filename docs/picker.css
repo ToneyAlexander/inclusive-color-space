@@ -12,6 +12,7 @@
 
 #picker-container {
     margin-bottom: 12px;
+    max-width: 100%;
 }
 
 #hex {
@@ -26,14 +27,16 @@
     grid-column: 1;
     grid-row: 2;
     width: 320px;
-    height: 320px;
+    aspect-ratio: 1 / 1;
+    max-width: 100%;
     content: url(img/face.png);
 }
 
 #color-square {
     position: relative;
     width: 300px;
-    height: 300px;
+    aspect-ratio: 1 / 1;
+    max-width: 100%;
     border: 1px solid #ccc;
     cursor: crosshair;
 }
@@ -55,6 +58,7 @@
     appearance: none;
     -webkit-appearance: none;
     background: transparent;
+    max-width: 100%;
 }
 
 #slider::-webkit-slider-runnable-track {
