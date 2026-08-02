@@ -441,6 +441,7 @@ def to_rgb(t, u, v) -> tuple[int, int, int]:
                 <li>Define t, u, and v in terms of x, y, and z</li>
                 <li>Modify how t, u, and v are defined until the sphere stretches to match up with the expected data
                 </li>
+                <li>Invert the relationships in order to define x, y, and z in terms of t, u, and v</li>
             </ol>
             </p>
 
@@ -478,7 +479,7 @@ def to_rgb(t, u, v) -> tuple[int, int, int]:
 
             <p>
                 Am I endorsing this methodology? No. But also kind of. In this specific situation it's what worked to
-                get it done and get something out the door. It would be great to see someone do this properly, with nice
+                get it done and get functional equations. It would be great to see someone do this properly, with nice
                 clean symbolic regression and really good training data. But I figured since the training data I labeled
                 was middling quality at best, I'd probably have a better time using my guess and check and then
                 eyeballing the results.
@@ -597,7 +598,7 @@ def to_rgb(t, u, v) -> tuple[int, int, int]:
 
             <p>
                 What is R²? R² is the radius of a sphere in the skin tone color space. Because one of the steps of
-                translation from RBG to TUV involves a sphere, it makes spheres a natural shape to work with in TUV
+                translation from RGB to TUV involves a sphere, it makes spheres a natural shape to work with in TUV
                 space. A lot of the cool properties that arise from that fact are just a side effect of spheres having a
                 lot of useful properties.
             </p>
@@ -696,7 +697,7 @@ def to_rgb(t, u, v) -> tuple[int, int, int]:
                 algorithm, and we have a methodology for creating new spaces or modifying the existing one. Overall, I'm
                 thrilled with this result. It's certainly not perfect, but I don't think a simple and completely correct
                 solution exists. I've already used the picker in a digital painting and it was exactly as I was hoping
-                it'd be - and I'm looking forward to using the generator in my next project.
+                it'd be - and I'm looking forward to using the generator in my next projects.
             </p>
 
             <h2 id="next">
