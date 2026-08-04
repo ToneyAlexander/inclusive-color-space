@@ -1,5 +1,6 @@
 function build_picker() {
     const square = document.getElementById("color-square");
+    const canvas = document.getElementById("canvas");
     const cursor = document.getElementById("square-cursor");
     const slider = document.getElementById("slider");
     const face = document.getElementById("face");
@@ -12,7 +13,6 @@ function build_picker() {
     const w = square.width || square.clientWidth;
     const h = square.height || square.clientHeight;
 
-    const canvas = document.createElement("canvas");
     canvas.width = w;
     canvas.height = h;
 
@@ -110,9 +110,6 @@ function build_picker() {
         }
 
         ctx.putImageData(img, 0, 0);
-
-        square.style.backgroundImage =
-            `url(${canvas.toDataURL()})`;
     }
 
     let dragging = false;
